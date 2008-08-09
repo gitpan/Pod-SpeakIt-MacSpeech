@@ -17,7 +17,7 @@ my $channel = NewSpeechChannel($voice);
 SetSpeechPitch($channel, 0.9*GetSpeechPitch($channel) );
 SetSpeechRate( $channel, 0.7*GetSpeechRate($channel) );
 
-$VERSION = '0.10_01';
+$VERSION = '0.11';
 
 =head1 NAME
 
@@ -31,8 +31,8 @@ Pod::SpeakIt::MacSpeech - This is the description
 
 ***THIS IS ALPHA SOFTWARE. MAJOR PARTS WILL CHANGE***
 
-This module overrides and extends C<Pod::InDesign::TaggedText> to translate
-Pod into the InDesign Tagged Text format used by The Perl Review.
+This module overrides and extends C<Pod::PsuedoPod> to read
+Pod aloud.
 
 =cut
 
@@ -98,7 +98,7 @@ L<Pod::InDesign::TaggedText>, L<Pod::Simple>
 =head1 SOURCE AVAILABILITY
 
 This source is part of a SourceForge project which always has the
-latest sources in CVS, as well as all of the previous releases.
+latest sources in SVN, as well as all of the previous releases.
 
 	http://sourceforge.net/projects/brian-d-foy/
 
@@ -111,7 +111,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2007, brian d foy, All Rights Reserved.
+Copyright (c) 2007-2008, brian d foy, All Rights Reserved.
 
 You may redistribute this under the same terms as Perl itself.
 
